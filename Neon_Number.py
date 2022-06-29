@@ -1,12 +1,10 @@
 a=int(input())
 sq=a*a
-rem=0
 s=0
-while sq!=0 :
-    rem=sq%10
-    s=s+rem
+while sq:
+    s+=sq%10
     sq=sq//10
-if a==s :
-    print("Neon Number")
+if(s==a):
+    print('Neon Number')
 else:
-    print("Not Neon Number")
+    print('Not Neon Number')
