@@ -1,0 +1,5 @@
+lst=list(map(int,input().split()))
+a=max(lst)
+lst.remove(a)
+b=max(lst)
+print((a-1)*(b-1))
