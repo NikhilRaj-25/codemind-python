@@ -1,15 +1,13 @@
-a=int(input())
-l=list(map(int,input().split()))
-b,c=map(int,input().split())
-d=0
-e=[]
-for i in l:
-    if i>=b and i<=c:
-        continue
+n=int(input())
+a=list(map(int,input().split()))
+x,y=map(int,input().split())
+c=[]
+for i in range(0,n):
+    if a[i]>=x and a[i]<=y:
+        pass
     else:
-        d=1
-        e.append(i)
-if d==0:
+        c.append(a[i])
+if len(c)==0:
     print('-1')
 else:
-    print(max(e))
+    print(max(c))
