@@ -1,7 +1,6 @@
 a=input()
-b=list(a.split())
-for i in b:
-    c=""
-    for j in range(len(i)-1,-1,-1):
-        c+=i[j]
-    print(c,end=" ")
+l=a.split()
+ans=[]
+for i in l:
+    ans.append(i[::-1])
+print(*ans)
