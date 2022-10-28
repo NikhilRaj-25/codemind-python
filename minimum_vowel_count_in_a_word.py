@@ -1,11 +1,12 @@
 a=input()
-b=list(a.split( ))
-l=10
-for i in b:
+l=a.split()
+v="aeiou"
+d=999
+for i in l:
     c=0
     for j in i:
-        if j in 'aeiou':
+        if j in v:
             c+=1
-    if l>c:
-        l=c
-print(l)
+    if d>c:
+        d=c
+print(d)
