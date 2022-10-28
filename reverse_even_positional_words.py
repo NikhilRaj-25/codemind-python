@@ -1,11 +1,9 @@
 a=input()
-b=list(a.split( ))
-for i in range(0,len(b)):
-    d=b[i]
+l=a.split()
+b=""
+for i in range(0,len(l)):
+    b=l[i]
     if i%2==0:
-        c=''
-        for j in range(len(d)-1,-1,-1):
-            c+=d[j]
-        print(c,end=' ')
+        print(b[::-1],end=" ")
     else:
-        print(d,end=' ')
+        print(b,end=" ")
