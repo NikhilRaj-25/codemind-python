@@ -1,8 +1,9 @@
 a=input()
-b=list(a.split( ))
+l=a.split()
 c=0
-for i in range(0,len(b)):
-    d=b[i]
-    if d[0] in 'aeiouAEIOU' and d[len(d)-1] not in 'aeiouAEIOU':
+v="aeiouAEIOU"
+for i in l:
+    b=len(i)
+    if (i[0] in v) and (i[b-1] not in v):
         c+=1
 print(c)
