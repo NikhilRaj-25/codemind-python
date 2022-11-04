@@ -1,6 +1,8 @@
 a=input()
+b=a.lower()
 c=0
-for i in a:
-    if i>='a' and i<='z':
-        c+=1
+for i in range(0,len(a)):
+    if a[i]!=' ':
+        if a[i]==b[i]:
+            c+=1
 print(c)
