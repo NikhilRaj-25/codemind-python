@@ -1,4 +1,8 @@
 a=input()
-b=list(a.split( ))
-for i in b:
-    print(len(i),end=' ')
+l=a.split()
+c=0
+for i in l:
+    c=0
+    for j in i:
+        c+=1
+    print(c,end=" ")
