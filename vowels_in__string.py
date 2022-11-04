@@ -1,11 +1,12 @@
 a=input()
+ans=0
 v="aeiouAEIOU"
-c=0
-ans=[]
+c=[]
 for i in a:
-    if i in v and i not in ans:
-        ans.append(i)
-if len(ans)==0:
+    if (i in v) and (i not in c):
+        c.append(i)
+if len(c)>0:
+    ans=1
+    print(*c)
+if ans==0:
     print('-1')
-else:
-    print(*ans)
