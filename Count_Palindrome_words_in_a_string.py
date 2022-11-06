@@ -1,17 +1,20 @@
-def pali(a):
-    a=a.lower()
-    b=a[::-1]
-    c=0
-    for i in range(len(a)):
+def pali(a,b):
+    a1=len(a)
+    for i in range(a1):
         if a[i]==b[i]:
-            c=2
+            continue
         else:
             return 0
     return 1
 a=input()
 l=a.split()
+a1=a2=a3=""
 c=0
 for i in l:
-    if pali(i):
+    a1=i
+    a2=i[::-1]
+    a1=a1.lower()
+    a2=a2.lower()
+    if pali(a1,a2):
         c+=1
 print(c)
