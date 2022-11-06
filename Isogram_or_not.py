@@ -1,10 +1,12 @@
+def iso(a):
+    l=len(a)
+    for i in range(l):
+        for j in range(l):
+            if a[i]==a[j] and i!=j:
+                return 0
+    return 1
 a=input()
-c=0
-for i in a:
-    if a.count(i)>1:
-        c+=1
-        break
-if c==0:
-    print('True')
+if iso(a):
+    print("True")
 else:
-    print('False')
+    print("False")
