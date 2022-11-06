@@ -1,11 +1,12 @@
 a=input()
-b=input()
 a=a.lower()
+b=input()
 b=b.lower()
-l1=a.split()
-l2=b.split()
-c=0
-for i in l1:
-    if i in l2:
-        c+=1
-print(c)
+count=0
+a=list(a.split(" "))
+b=list(b.split(" "))
+for i in a:
+    if i in b :
+        if b.count(i)==1 and a.count(i)==1:
+            count+=1
+print(count)
