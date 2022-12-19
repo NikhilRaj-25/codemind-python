@@ -1,2 +1,3 @@
 a=input()
-print(a[::-1])
+l=a.split()
+print(*l[::-1])
