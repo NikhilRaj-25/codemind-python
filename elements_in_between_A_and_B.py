@@ -1,13 +1,13 @@
-n=int(input())
-arr=list(map(int,input().split()))
-a,b=map(int,input().split())
+a=int(input())
+l=list(map(int,input().split()))
+b,c=map(int,input().split())
 ans=[]
-c=0
-for i in arr:
-    if i>=a and i<=b:
-        c=1
+co=0
+for i in l:
+    if i>=b and i<=c:
         ans.append(i)
-if c==1:
-    print(*ans)
+        co+=1
+if co==0:
+    print(-1)
 else:
-    print('-1')
+    print(*ans)
