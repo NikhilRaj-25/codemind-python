@@ -1,14 +1,15 @@
-n=int(input())
-arr=list(map(int,input().split()))
-a,b=map(int,input().split())
-ans=-1000
-c=0
-for i in arr:
-    if i>=a and i<=b:
-        if i>ans:
-            c=1
-            ans=i
-if c==1:
-    print(ans)
+a=int(input())
+l=list(map(int,input().split()))
+b,c=map(int,input().split())
+max=0
+ans=0
+for i in l:
+    if i>=b and i<=c:
+        if i>max:
+            max=i
+            ans+=1
+if ans==0:
+    print(-1)
 else:
-    print('-1')
+    print(max)
+    
